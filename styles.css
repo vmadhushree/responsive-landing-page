@@ -1,0 +1,86 @@
+
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('frontpage.jpg') no-repeat center center/cover;
+    color: #fafcfc;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+.navbar.scrolled {
+    background: #000;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-menu li a {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: color 0.3s, background 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #000;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about, #services, #contact {
+    background: rgba(0, 0, 0, 0.7);
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.section-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
